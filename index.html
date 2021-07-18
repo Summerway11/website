@@ -98,57 +98,33 @@
         </div>
     </footer>
 
-    <!-- <script src="js/vconsole.min.js"></script> -->
-    <!-- <script>
-    var vConsole = new VConsole()
-    console.log("Hello World!")
-  </script> -->
+    <script src="js/vconsole.min.js"></script>
+    <script>
+        var vConsole = new VConsole()
+        console.log("Hello World!")
+    </script>
 
     <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <script>
-        function createUniversalLink() {
-        }
-
-        async function shareMsg() {
-        }
-
-        function logOut() {
-        }
-
-        function closed() {
-        }
-
-        async function scanCode() {
-        }
-
-        function openWindow() {
-        }
-
-        async function getFriendship() {
-        }
-
         async function sendMsg() {
-        if (liff.getContext().type !== "none"){
-            await liff.sendMessages([
-                {
-                    "type": "sticker",
-                    "stickerId": 1,
-                    "packageId":1
-                }
-            ])
-            alert("Messages sent")
-        }
-        }
-
-        function getContext() {
+            if (liff.getContext().type !== "none") {
+                await liff.sendMessages([
+                    {
+                        "type": "sticker",
+                        "stickerId": 1,
+                        "packageId": 1
+                    }
+                ])
+                alert("Messages sent")
+            }
         }
 
         async function getUserProfile() {
             const profile = await liff.getProfile()
             document.getElementById("pictureUrl").src = profile.pictureUrl
-            document.getElementById("userId").append(profile.useId) 
-            document.getElementById("statusMessage").append(profile.statusMessage) 
-            document.getElementById("displayName").append(profile.displayName) 
+            document.getElementById("userId").append(profile.useId)
+            document.getElementById("statusMessage").append(profile.statusMessage)
+            document.getElementById("displayName").append(profile.displayName)
             document.getElementById("decodeIDToken").append(liff.getDecodeIDToken().email)
         }
 
@@ -164,9 +140,7 @@
             await liff.init({ liffId: "1656199226-JGye8wkD" })
             getEnvironment()
             getUserProfile()
-            // getContext()
-            // getFriendship()
-            // createUniversalLink()
+            getContext()
         }
         main()
     </script>
