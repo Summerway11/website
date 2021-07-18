@@ -1,52 +1,73 @@
-body{
-    background-color: #F5F5C6;
-    font-family: 'Mitr', sans-serif;
+body {
+    background-color: #f5f5c6;
+    font-family: "Mitr", sans-serif;
 }
 
-h2{
-    color: #F5F5C6;
+h2 {
+    color: #f5f5c6;
     padding-left: 2%;
     padding-top: 1%;
 }
 
-.padding-5{
+.padding-5 {
     padding: 5%;
 }
 
-.padding-3{
+.padding-3 {
     padding: 3%;
 }
 
-
-.fixed-bottom{
+.fixed-bottom {
     position: fixed;
     width: 100%;
     height: auto;
     padding-top: 2%;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.rigth{
+.rigth {
     text-align: right;
 }
 
-p{
+p {
     font-size: smaller;
-    color: #F5F5C6;
-
+    color: #f5f5c6;
 }
 
-.padding-top-1{
+.padding-top-1 {
     padding-top: 5%;
 }
 
-h6{
-    color: #27253D;
+h6 {
+    color: #27253d;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+#os,
+#language,
+#version,
+#isInClient,
+#accessToken,
+#pictureUrl,
+#userId,
+#displayName,
+#statusMessage,
+#decodedIDToken,
+#type,
+#viewType,
+#utouId,
+#roomId,
+#groupId,
+#friendship,
+#scanCode,
+#isLoggedIn,
+#universalLink1,
+#universalLink2 {
+    color: #27253d;
 }
