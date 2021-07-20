@@ -108,19 +108,19 @@
         async function getUserProfile() {
             const profile = await liff.getProfile()
             document.getElementById("pictureUrl").src = profile.pictureUrl
-            document.getElementById("userId").append(profile.useId)
+            // document.getElementById("userId").append(profile.useId)
             document.getElementById("statusMessage").append(profile.statusMessage)
             document.getElementById("displayName").append(profile.displayName)
             document.getElementById("decodeIDToken").append(liff.getDecodeIDToken().email)
         }
 
-        function getEnvironment() {
-            document.getElementById("os").append(liff.getOS())
-            document.getElementById("language").append(liff.getLanguage())
-            document.getElementById("version").append(liff.getVersion())
-            document.getElementById("accessToken").append(liff.getAccessToken())
-            document.getElementById("isInClient").append(liff.isInClient())
-        }
+        // function getEnvironment() {
+        //     document.getElementById("os").append(liff.getOS())
+        //     document.getElementById("language").append(liff.getLanguage())
+        //     document.getElementById("version").append(liff.getVersion())
+        //     document.getElementById("accessToken").append(liff.getAccessToken())
+        //     document.getElementById("isInClient").append(liff.isInClient())
+        // }
 
         // async function getFriendship() {
         //     const friend = await liff.getFriendship()
@@ -134,7 +134,7 @@
 
         async function main() {
             await liff.init({ liffId: "1656199226-JGye8wkD" })
-            getEnvironment()
+            // getEnvironment()
             getUserProfile()
             getContext()
             getFriendship()
